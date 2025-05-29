@@ -1,0 +1,59 @@
+/* General styles for the nav container */
+nav {
+  background-color: #282c34;
+  /* Dark background */
+  padding: 10px 20px;
+  /* Spacing inside nav */
+  display: flex;
+  /* Arrange links horizontally */
+  justify-content: center;
+  /* Center align the links */
+  gap: 20px;
+  /* Spacing between links */
+  width: 100%;
+  z-index: 1000;
+  left: 0;
+  position: fixed; /* Fix the nav to the top */
+  top: 0; 
+}
+
+/* Style for the links */
+nav a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: white;
+  /* White text for better contrast */
+  font-size: 18px;
+  /* Make text slightly larger */
+  transition: color 0.3s ease;
+  /* Smooth color change on hover */
+}
+
+/* Hover effect for links */
+nav a:hover {
+  color: #61dafb;
+  /* React's brand blue */
+}
+
+/* Add active state styling if needed */
+nav a.active {
+  font-weight: bold;
+  color: #61dafb;
+  /* Highlight active link */
+}
+.default-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 60px; /* מבטיח שהכותרת תופיע מתחת ל-NAV */
+}
+
+/* כל שאר הדפים - התוכן באמצע המסך */
+.centered-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}

@@ -1,0 +1,17 @@
+.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    height: 4.5em;
+
+    
+}
+.add-to-cart-btn:disabled {
+    background-color: #e0e0e0;
+    color: #888;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    opacity: 1;
+}
